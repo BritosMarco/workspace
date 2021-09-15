@@ -1,0 +1,23 @@
+<script>
+    function teste(a) {
+        var micro = (a.value || a.options[a.selectedIndex].value);
+        var tipo1 = 0;
+
+        if (micro == "Micro Inversores") {
+            tipo1 = 1;
+        } else if (micro == "Inversor Tradicional") {
+            tipo1 = 0.8;
+        } else {
+            tipo1 = 0;
+        }
+
+        document.getElementById('compl_Preco_1').value = tipo1;
+    }
+</script>
+<select onChange="teste(this)" id="tipo_unidade" name="tipo_unidade" style="width:660px">
+     <option value="">-Selecione</option>
+    <option value="Micro Inversores">Micro Inversores</option>
+    <option value="Inversor Tradicional">Inversor Tradicional </option>
+</select>
+
+<input type="text" id="compl_Preco_1">

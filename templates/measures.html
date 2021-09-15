@@ -16,81 +16,77 @@
 <body>
     <div class="card">
         <form name='fprincipal'>
-            <h1>Conversor de Quilômetro</h1>
+            <h2>Conversor de Comprimentos/Distância</h2>
             <br>
             <div class="medidas-a">
                 <label for="">Valor</label>
-                <input type="text" value='0' name='editpol'>
+                <input type="text" value='0' name='editval'>
 
-                <select name="tipo_comprimento" id="de">
-                <!-- \option value="">Selecione Um tipo</option>
-                    <option value=""></option>  -->
-                <option value="">Quilômetro (km)</option>
-                <option value="">Metro (m)</option>
-                <option value="">Centímetro (cm)</option>
-                <option value="">Milímetro (mm)</option>
-                <option value="">Milha (mi)</option>
-                <option value="">Milha Náutica</option>
-                <option value="">Jarda (Yd)</option>
-                <option value="">Pé (ft)</option>
-                <option value="">Polegadas (in)</option>
-                </select>
+                <select name="tipo_comprimento" id="de" onchange="converter(this)">
+                    <!-- <option value="">Selecione Um tipo</option>
+                    <option value=""></option> -->
+                    <option value="">Esolha a Medida</option>
+                    <option value="1">Quilômetro (km)</option>
+                    <option value="2">Metro (m)</option>
+                    <option value="3">Centímetro (cm)</option>
+                    <option value="4">Milímetro (mm)</option>
+                    <option value="5">Milha (mi)</option>
+                    <option value="6">Milha Náutica</option>
+                    <option value="7">Jarda (Yd)</option>
+                    <option value="8">Pé (ft)</option>
+                    <option value="9">Polegadas (in)</option>
+                    </select>
             </div>
 
             <br><br><br>
 
 
 
-
             <div class="resultado" id="resultado">
                 <br>
                 <label for="">Quilômetro (cm) = </label>
-                <input type='text' size="15" name='editkm' value='0'>
+                <input type='text' size="18" name='editkm' value='0'>
                 <br>
 
                 <label for="">Metro (m) = </label>
-                <input type='text' size="15" NAME='editm' VALUE='0'>
+                <input type='text' size="18" NAME='editm' VALUE='0'>
                 <br>
 
-
-
                 <label for="">Centímetro (cm) = </label>
-                <input type='text' size="15" name='editcm' value='0'>
+                <input type='text' size="18" name='editcm' value='0'>
                 <br>
 
                 <label for="">Milímetro (mm) = </label>
-                <input type='text' size="15" name='editmm' value='0'>
+                <input type='text' size="18" name='editmm' value='0'>
                 <br>
 
                 <label for="">Milha (mi) = </label>
-                <input type='text' size="15" name='editmi' value='0'>
+                <input type='text' size="18" name='editmi' value='0'>
                 <br>
 
                 <label for="">Milha Nautica= </label>
-                <input type='text' size="15" name='editmn' value='0'>
+                <input type='text' size="18" name='editmn' value='0'>
                 <br>
 
                 <label for="">Jarda (Yd) = </label>
-                <input type='text' size="15" name='edityd' value='0'>
+                <input type='text' size="18" name='edityd' value='0'>
                 <br>
 
                 <label for="">Pe (ft) = </label>
-                <input type='text' size="15" name='editpe' value='0'>
+                <input type='text' size="18" name='editpe' value='0'>
                 <br>
+
+                <label for="">Polegadas (in) =</label>
+                <input type='text' size="18" name='editpol' value='0'>
                 <br>
-                <!--  <p>Polegadas (in) =</p> -->
-                <!-- <TD>
-                                        <input type='text' name='editpol' value='0'>
-                                    </TD>
-                                    <TR> -->
 
             </div>
 
-
+            <!-- 
             <div class="calcular">
 
-                <input type='button' id="calcular" name='buttoncalc' value='Calcular' OnClick='ConvertePolegadasEmCm()'>
-            </div>
+                <input type='button' id="calcular" name='buttoncalc' value='Calcular' OnClick='converter(a)'>
+            </div> -->
         </form>
 
     </div>
