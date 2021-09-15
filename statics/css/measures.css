@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+    display: flex !important;
+    justify-content: center !important;
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    display: flex !important;
+    justify-content: center !important;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    justify-content: space-between;
+}
+
+.card {
+    font-display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    background-color: #c20965;
+    width: auto;
+    position: relative;
+    box-shadow: 5px 5px 2px 0px #00000050;
+    margin-top: 60px;
+    margin-bottom: 100px;
+    color: #fff;
+    float: left;
+}
+
+.card h2 {
+    padding-bottom: 2rem;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.medidas-a {
+    float: left;
+}
+
+.medidas-a input {
+    padding: 0.6rem;
+    border-radius: 10px;
+    /* box-shadow: 5px 5px 0px 0px #00000050; */
+}
+
+.resultado#resultado {
+    background-color: #fff;
+    border: #000000 fixed 2rem;
+    width: auto;
+    box-shadow: 5px 5px 2px 0px #00000050;
+    margin-bottom: 30px;
+}
+
+form .resultado label {
+    float: left;
+    color: #000000;
+}
+
+.resultado#resultado input {
+    text-align: right;
+    color: #3d0af5;
+    border-radius: 10px;
+}
+
+.calcular input#calcular {
+    display: flex !important;
+    color: #fff;
+    padding: 0.5rem;
+    justify-content: center !important;
+    font-weight: bold;
+    box-shadow: 5px 5px 2px 0px #00000050;
+    width: 30%;
+    justify-content: space-around;
+    border-radius: 10px;
+    background-color: blue;
+}
+
+.calcular {
+    display: flex !important;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+form .resultado input {
+    float: right;
+    margin-right: 50px;
+    color: blue;
+    font-weight: bold;
+    /* border-radius: 10px; */
+    border: 1px solid #000000;
+}
+
+select#de {
+    /*   border-bottom: 2px solid #000000; */
+    color: #000000;
+    padding: 0.5rem;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.de p {
+    color: #000000;
+    text-align: left;
+    font-size: 16px;
+}
+
+.de input {
+    border-bottom: 2px solid #000000;
+    color: #6009ec;
+    padding: 0.5rem;
+    font-size: 16px;
+}
