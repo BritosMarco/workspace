@@ -1,0 +1,111 @@
+<HTML>
+
+<HEAD>
+    <TITLE>Conversor de Polegada</TITLE>
+    <SCRIPT LANGUAGE="JavaScript">
+        <!--
+        function criaobjeto(pol, cm, m) {
+            this.pol = pol;
+            this.cm = cm;
+            this.m = m;
+        };
+
+        function ConverteCmEmPolegadas() {
+            var cm = parseFloat(document.fprincipal.editcm.value);
+            if (cm < 0) {
+                alert('Nao e possivel converter valor negativo.')
+            } else {
+                var pol = cm / 2.54
+                var m = 0
+                var converte = new criaobjeto(pol, cm, m);
+                document.fprincipal.editpol.value = converte.pol;
+            }
+        };
+
+
+        function ConvertePolegadasEmCm() {
+            var pol = parseFloat(document.fprincipal.editpol.value);
+            if (pol < 0) {
+                alert('Nao e possivel converter valor negativo')
+            } else {
+                var cm = (pol * 2.54);
+                var m = (((cm - (cm % 100)) / 100))
+                if (cm > 100) {
+                    cm = cm % 100
+                }
+                var converte = new criaobjeto(pol, cm, m);
+                document.fprincipal.editcm.value = converte.cm
+                document.fprincipal.editm.value = converte.m
+            }
+        };
+
+
+        //-->
+    </script>
+
+    <BODY BGcolor='darkgoldenrod'>
+        <form name='fprincipal'>
+            <center>
+                <H1>Conversor de Medidas 1.1</H1>
+            </center>
+            <HR>
+            <font size=4 face='courier_new'>
+                <B>Digite a medida a ser convertida
+  na respectiva caixa de texto e clique no respectivo bot&atilde;o de converter.</B>
+            </font>
+            <hr><br>
+            <TABLE BORDER=0>
+                <TD>
+                    <font face='arial' size=4>
+                        <B>Medida em Polegadas:</B>
+                    </font>
+                </TD>
+                <TD>
+                    <input type='text' value='0' name='editpol'>
+                </TD>
+                <TR>
+                    <TD>
+                        <font face='arial' size=4><b>Medida em cm:</b></font>
+                    </TD>
+                    <TD>
+                        <input type='text' name='editcm' value='0'>
+                    </TD>
+                    <TR>
+                        <TD>
+                            <font face='arial' size='4'><b>Medida em Metros:</b></font>
+                        </TD>
+                        <TD>
+                            <input type='text' NAME='editm' VALUE='0'>
+                        </TD>
+                        <TR>
+                            <TD>
+                                <input type='button' name='buttoncalc' value='Polegadas -> Cm' OnClick='ConvertePolegadasEmCm()'>
+                            </TD>
+                            <TD>
+                                <input type='button' name='converteCmEmPol' value='Cm -> Polegadas' OnClick='ConverteCmEmPolegadas()'>
+                            </TD>
+                            <TD>
+                                <input type='button' name='converteMemPol' value='Metros -> Polegadas' Onclick='ConverteMetrosEmPolegadas()'>
+                            </TD>
+                            <TR>
+                                <TD>
+                                    <input type='reset' value='Limpar Campos'>
+            </TABLE>
+        </form>
+        <CENTER>
+            <FONT SIZE="-2">P&aacute;gina desenvolvida por</FONT>
+            <FONT SIZE="-2">
+                <A HREF="mailto:shadow_catbr@yahoo.com">Rafael Bortoletto</A>
+            </FONT>
+            <FONT SIZE="-2">. Agosto de 2003</FONT>
+            <BR>
+            <FONT SIZE="-2">�ltima altera��o:
+                <SCRIPT>
+                    document.write(document.lastModified);
+                </SCRIPT>
+            </FONT>
+            <BR>
+        </CENTER>
+    </body>
+
+</html>
